@@ -1,0 +1,16 @@
+{
+  "name": "warm-brushlands",
+  "version": "1.0.0",
+  "description": "A heroku RESTful API",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node --test"
+  },
+  "author": "Justin Rodriguez",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
