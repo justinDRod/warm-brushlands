@@ -6,7 +6,12 @@
   "type": "module",
   "scripts": {
     "start": "node index.js",
-    "test": "node --test"
+    "test": "node --test",
+    "heroku:ps:stage": "heroku ps --app warm-brushlands-stage",
+    "heroku:ps:prod": "heroku ps --app warm-brushlands",
+    "heroku:wake:stage": "heroku ps:scale --app warm-brushlands-stage web=1",
+    "heroku:wake:prod": "heroku ps:scale --app warm-brushlands web=1",
+    "heroku:sleep:all": "heroku ps:scale --app warm-brushlands-stage web=0 && heroku ps:scale --app warm-brushlands web=0"
   },
   "author": "Justin Rodriguez",
   "license": "MIT",
