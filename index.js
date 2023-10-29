@@ -1,7 +1,9 @@
 import express from 'express'
 const app = express();
 const PORT = process.env.PORT || 5001
-const { Pool } = require('pg')
+import pg from "pg";
+
+const { Pool} = pg;
 
 app.use(express.json());
 app.use(
