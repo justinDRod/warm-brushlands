@@ -1,0 +1,11 @@
+{
+    "name": "warm-brushlands",
+    "description": "An example Heroku Node application",
+    "repository": "https://github.com/justinDRod/warm-brushlands",
+    "keywords": ["node", "express", "heroku"],
+    "addons": [
+        {
+            "plan": "heroku-postgresql:mini"
+        }
+    ]
+}
