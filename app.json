@@ -5,7 +5,7 @@
     "keywords": ["node", "express", "heroku"],
     "addons": [
         {
-            "plan": "heroku-redis-mini"
+            "plan": "heroku-redis:mini"
         }
     ]
 }
