@@ -22,12 +22,12 @@ app.use(
 app.get("/", (req, res) => {
   res.json({ message: "ok" });
 })
-.get('/db', async (req, res) => {
-  const value = await client.get("key");
+.get('/db/:key', async (req, res) => {
+  const value = await client.get(req.params.key);
   res.json(value);
 })
-.post('/db/:value', async(req, res) => {
-  await client.set('key', req.params.value);
+.post('/db/:key/:value', async(req, res) => {
+  await client.set(req.params.key, req.params.value);
   res.json({message: "complete"});
 });
 app.listen(PORT, () => {
